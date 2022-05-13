@@ -1,13 +1,13 @@
 <template>
-  
+    <div class="container"></div>
 </template>
 
 <script>
 export default {
-
+    name: 'FooterBottom'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
