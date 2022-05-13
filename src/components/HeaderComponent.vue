@@ -6,21 +6,11 @@
       </div>
       <nav>
         <ul>
-          <li>
-            <a href="#">menu</a>
+
+          <li v-for="(item, index) in menuItems" :key="`menu-item-${index}`">
+            <a :class="{'active' : item.isActive}" href="#">{{item.name}}</a>
           </li>
-          <li>
-            <a class="active" href="#">menu</a>
-          </li>
-          <li>
-            <a href="#">menu</a>
-          </li>
-          <li>
-            <a href="#">menu</a>
-          </li>
-          <li>
-            <a href="#">menu</a>
-          </li>
+
         </ul>
       </nav>
     </div>
@@ -29,7 +19,53 @@
 
 <script>
 export default {
-    name: 'HeaderComponent',
+  name: 'HeaderComponent',
+  data(){
+    return{
+      menuItems: [
+        {
+          name: 'Characters',
+          isActive: false
+        },
+        {
+          name: 'Comics',
+          isActive: true
+        },
+        {
+          name: 'Movies',
+          isActive: false
+        },
+        {
+          name: 'tv',
+          isActive: false
+        },
+        {
+          name: 'games',
+          isActive: false
+        },
+        {
+          name: 'collectibles',
+          isActive: false
+        },
+        {
+          name: 'videos',
+          isActive: false
+        },
+        {
+          name: 'fans',
+          isActive: false
+        },
+        {
+          name: 'news',
+          isActive: false
+        },
+        {
+          name: 'shop',
+          isActive: false
+        }
+      ]
+    }
+  }
 }
 </script>
 
