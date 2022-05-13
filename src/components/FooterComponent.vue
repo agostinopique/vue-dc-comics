@@ -2,24 +2,25 @@
     <footer>
         
         <div class="footer-top">
-            <div class="container">
-    
-            </div>
+            <FooterTop />
         </div>
 
         <div class="footer-bottom">
-            <div class="container">
-    
-            </div>
+                <FooterBottom />
         </div>
 
     </footer>
 </template>
 
 <script>
-export default {
 
+import FooterTop from "./FooterTop.vue";
+import FooterBottom from "./FooterBottom.vue";
+
+export default {
+    components: { FooterTop, FooterBottom }
 }
+
 </script>
 
 <style lang="scss" scoped>
