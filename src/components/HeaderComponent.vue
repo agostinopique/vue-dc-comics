@@ -71,9 +71,11 @@ ul{
     text-transform: uppercase;
     padding: 37px 15px 35px 15px;
     border-bottom: 4px solid white;
+    color: black;
 
     &.active{
       border-color: $dc-blue;
+      color: $dc-blue;
     }
   }
 }

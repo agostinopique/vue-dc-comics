@@ -1,7 +1,7 @@
 <template>
     <div class="container d-flex">
             <div class="list-section w-50 d-flex flex-wrap pt-3">
-                <div>
+                <div class="first-list">
                     <ul>
                         <h4 class="text-light pt-3">DC COMICS</h4>
                         <li>Characters</li>
@@ -76,5 +76,8 @@ export default {
     }
 }
 
+.first-list ul{
+    padding-left: 0;
+}
 
 </style>
