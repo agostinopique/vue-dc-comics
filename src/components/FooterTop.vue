@@ -52,7 +52,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/vars';
 @import '../assets/style/mixins';
 
 .list-section,

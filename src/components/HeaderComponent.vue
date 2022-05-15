@@ -92,15 +92,14 @@ header{
 }
 
 nav{
-  display: flex;
-  align-items: center
+  @include alignCenter;
 }
 
 ul{
   @include listItems;
-  display: flex;
-  align-items: center;
+  @include alignCenter;
   margin-bottom: none;
+
   li a{
     @include aLink();
     display: inline-block;
@@ -109,7 +108,8 @@ ul{
     border-bottom: 4px solid white;
     color: black;
 
-    &.active{
+    &.active,
+    &:hover{
       border-color: $dc-blue;
       color: $dc-blue;
     }

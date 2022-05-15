@@ -13,14 +13,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/mixins';
+
 main{
     background-color: black;
     height: 150px;
     .container{
         height: 100%; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include displayCenter;
         h1{
             color: white;
         }

@@ -48,8 +48,7 @@ export default {
 
 .container {
     height: 100px;
-    display: flex;
-    align-items: center;
+    @include alignCenter;
     justify-content: space-between;
 }
 
@@ -61,8 +60,7 @@ export default {
 }
 
 .dc-social {
-    display: flex;
-    align-items: center;
+    @include alignCenter;
 }
 
 .dc-social h3{
@@ -73,9 +71,10 @@ export default {
 .dc-social ul{
     @include listItems;
     display: flex;
-    margin-bottom: 0;
+    margin: 0;
     & a{
         @include aLink;
+        margin: 0 8px;
     }
 }
 </style>

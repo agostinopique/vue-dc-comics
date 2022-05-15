@@ -73,15 +73,13 @@ section{
 }
 
 ul{
-    display: flex;
+    @include alignCenter;
     justify-content: space-between;
-    align-items:center;
     padding-left: 0;
     @include listItems;
     height: 100%;
     li{
-        display: flex;
-        align-items:center;
+        @include alignCenter;
         width: calc(100% / 5);
         a{
             @include aLink;
