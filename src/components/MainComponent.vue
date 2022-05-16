@@ -1,14 +1,32 @@
 <template>
   <main>
+    <JumboComponent />
     <div class="container">
-        <h1>--->MAIN CONTENT&lt;---</h1>
+
+        <CardComponent
+            v-for="(comics, index) in ComicsBooks" 
+            :key="`Comic-${index}`"
+            :ComicElement="comics"
+        />
     </div>
   </main>
 </template>
 
 <script>
+
+import JumboComponent from './JumboComponent.vue'
+import CardComponent from './CardComponent.vue'
+import ComicsBooks from '../assets/data/ComicBooks'
+
+
 export default {
-    name: 'MainComponent'
+    name: "MainComponent",
+    components: { JumboComponent, CardComponent },
+    data() {
+        return{
+            ComicsBooks
+        }
+    }
 }
 </script>
 
@@ -16,11 +34,11 @@ export default {
 @import '../assets/style/mixins';
 
 main{
-    background-color: black;
-    height: 150px;
+    background-color: #1C1C1C;
     .container{
-        height: 100%; 
+        padding: 80px 0;
         @include displayCenter;
+        flex-wrap: wrap;
         h1{
             color: white;
         }
