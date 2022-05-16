@@ -15,12 +15,13 @@
 </template>
 
 <script>
+/* 
 import digitalComics from '../assets/img/buy-comics-digital-comics.png';
 import dcMerchandise from '../assets/img/buy-comics-merchandise.png';
 import subscription from '../assets/img/buy-comics-subscriptions.png';
-import shopLocator from '../assets/img/buy-comics-shop-locator.png';
+import shopLocator from v;
 import powerVisa from '../assets/img/buy-dc-power-visa.svg';
-
+ */
 
 export default {
     name: 'BottomComponent',
@@ -30,27 +31,27 @@ export default {
 
                 {
                     name: 'Digital comics',
-                    img: digitalComics,
+                    img: require('../assets/img/buy-comics-digital-comics.png'),
                     alt: 'digital-comics'
                 },
                 {
                     name: 'dc merchandise',
-                    img: dcMerchandise,
+                    img: require('../assets/img/buy-comics-merchandise.png'),
                     alt: 'dc-merchandise'
                 },
                 {
                     name: 'subscription',
-                    img: subscription,
+                    img: require('../assets/img/buy-comics-subscriptions.png'),
                     alt: 'subscription'
                 },
                 {
                     name: 'comic shop locator',
-                    img: shopLocator,
+                    img: require('../assets/img/buy-comics-shop-locator.png'),
                     alt: 'shop-locator'
                 },
                 {
                     name: 'dc power visa',
-                    img: powerVisa,
+                    img: require('../assets/img/buy-dc-power-visa.svg'),
                     alt: 'power-visa'
                 }
             ]
@@ -67,7 +68,6 @@ section{
     height: 150px;
     background-color: $dc-blue;
 }
-
 .container{
     height: 100%;
 }
@@ -87,12 +87,11 @@ ul{
             color: white;
         }
         img{
-            width: 20%;
+            max-width: 55px;
+            max-height: 55px;
             margin-right: 10px;
         }
-        img:last-child{
-            width: 100%;
-        }
+        
         
     }
 }

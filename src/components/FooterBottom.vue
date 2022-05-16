@@ -72,6 +72,7 @@ export default {
     @include listItems;
     display: flex;
     margin: 0;
+    
     & a{
         @include aLink;
         margin: 0 8px;
