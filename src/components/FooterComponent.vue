@@ -25,12 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 
-footer{
-    height: 550px;
-}
-
 .footer-top {
-    height: 450px;
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
     background-size: cover;

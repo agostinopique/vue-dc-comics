@@ -1,22 +1,30 @@
 <template>
-  <main>
-    <JumboComponent />
-    <div class="container">
+    <main>
+        <JumboComponent />
 
-        <CardComponent
-            v-for="(comics, index) in ComicsBooks" 
-            :key="`Comic-${index}`"
-            :ComicElement="comics"
-        />
-    </div>
-  </main>
+        <div class="container">
+            <div class="currentSeries">
+                <h3 class="text-light">Current Series</h3>
+            </div>
+            <CardComponent 
+                v-for="(comic, index) in ComicBooks"
+                :key="`comic-${index}`"
+                :ComicElement="comic" 
+            />
+            <div class="loadMore">
+                <a class="text-light" href="#">Load More</a>
+            </div>
+        </div>
+
+    </main>
 </template>
 
 <script>
 
 import JumboComponent from './JumboComponent.vue'
 import CardComponent from './CardComponent.vue'
-import ComicsBooks from '../assets/data/ComicBooks'
+import ComicBooks from '../assets/data/ComicBooks'
+
 
 
 export default {
@@ -24,7 +32,7 @@ export default {
     components: { JumboComponent, CardComponent },
     data() {
         return{
-            ComicsBooks
+            ComicBooks
         }
     }
 }
@@ -32,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/mixins';
+@import '../assets/style/vars';
 
 main{
     background-color: #1C1C1C;
@@ -39,8 +48,26 @@ main{
         padding: 80px 0;
         @include displayCenter;
         flex-wrap: wrap;
-        h1{
-            color: white;
+        position: relative;
+    }
+    .currentSeries{
+        background-color: $dc-blue;
+        padding: 8px 25px 4px 25px;
+        position: absolute;
+        top: -22px;
+        left: 0;
+        border-right: 1px solid black;
+        h3{
+            text-transform: uppercase;
+        }
+    }
+    .loadMore{
+        background-color: $dc-blue;
+        padding: 8px 45px;
+        a{
+            @include aLink;
+            text-transform: uppercase;
+            font-weight: bold;
         }
     }
 }

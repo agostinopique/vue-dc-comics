@@ -54,11 +54,6 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/mixins';
 
-.list-section,
-.footer-logo {
-    height: 450px;
-}
-
 .footer-logo{
     background-image: url(../assets/img/dc-logo-bg.png);
     background-position: center;
