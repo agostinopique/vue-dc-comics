@@ -11,10 +11,10 @@
                 :key="`comic-${index}`"
                 :ComicElement="comic" 
             />
+        </div>
             <div class="loadMore">
                 <a class="text-light" href="#">Load More</a>
             </div>
-        </div>
 
     </main>
 </template>
@@ -64,6 +64,11 @@ main{
     .loadMore{
         background-color: $dc-blue;
         padding: 8px 45px;
+        width: 200px;
+        position: relative;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%);
         a{
             @include aLink;
             text-transform: uppercase;
