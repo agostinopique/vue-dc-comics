@@ -19,12 +19,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .card-box{
-    width: calc(100% / 6);
     height: 280px;
     padding: 15px;
     .card-container{
-        width: 160px
+        width: 160px;
     }
     .cardItem{
         height: 160px;
@@ -36,6 +36,7 @@ export default {
     }
     .comic-title{
         display: inline-block;
+        text-transform: uppercase;
         margin-top: 15px;
     }
 }
