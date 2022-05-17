@@ -15,13 +15,6 @@
 </template>
 
 <script>
-/* 
-import digitalComics from '../assets/img/buy-comics-digital-comics.png';
-import dcMerchandise from '../assets/img/buy-comics-merchandise.png';
-import subscription from '../assets/img/buy-comics-subscriptions.png';
-import shopLocator from v;
-import powerVisa from '../assets/img/buy-dc-power-visa.svg';
- */
 
 export default {
     name: 'BottomComponent',
