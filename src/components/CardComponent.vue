@@ -22,7 +22,8 @@ export default {
     height: 280px;
     padding: 15px;
     .cardItem{
-        height: calc(90vh / 6);
+        height: 160px;
+        width: 160px;
         border-radius: 3px;
         overflow: hidden;
         img{

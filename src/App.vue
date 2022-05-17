@@ -2,7 +2,7 @@
   <div>
     <HeaderComponent />
     <MainComponent />
-    <BottomSection />
+    <BannerComponent />
     <FooterComponent />
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue'
-import BottomSection from './components/BottomSection.vue'
+import BannerComponent from './components/BannerComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 
 
@@ -19,7 +19,7 @@ export default {
   components: {
     HeaderComponent,
     MainComponent,
-    BottomSection,
+    BannerComponent,
     FooterComponent
   }
 }
